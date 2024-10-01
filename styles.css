@@ -189,8 +189,6 @@ nav.show {
 }
 
 /* Contenedor de tarjetas de proyectos */
-/* Contenedor de tarjetas de proyectos */
-/* Contenedor de tarjetas de proyectos */
 .card-container2 {
   display: grid; /* Usar grid para disposición de columnas */
   grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
@@ -215,7 +213,11 @@ nav.show {
   }
 }
 
-
+@media (max-width: 454px) {
+  .card-container2 {
+      padding-top: 650px; /* Aumenta el padding-top */
+  }
+}
 
 /* El resto de tus estilos existentes */
 
