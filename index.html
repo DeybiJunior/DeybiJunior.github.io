@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruiz Marquina Deybi Junior</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="background-container">
+        <!-- Encabezado -->
+        <header id="header">
+            <div class="logo">Deybi Junior</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Icono de menú hamburguesa -->
+            <nav id="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#Proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+                <a href="Archivos/Cv _ CURRICULO VITAE- RUIZ MARQUINA DEYBI JUNIOR.pdf" download>Descargar CV</a>
+            </nav>
+        </header>
+        
+        <script src="scriptheader.js"></script>
+        
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <!-- Sección de Inicio -->
+            <section id="inicio" class="hero">
+                <div class="hero-content">
+                    <h3 id="hello" class="hello">Hola, soy</h3>
+                    <h3 class="name">Deybi Junior</h3>
+                    <h3 class="job">Ingeniería de Sistemas</h3>
+                    <p class="text">Desarrollador apasionado por la tecnología y la innovación.</p>
+                    <button class="contact-btn" onclick="scrollToContact()">Contáctame</button>
+                    <script>
+                        function scrollToContact() {
+                            document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+                        }
+                        </script>
+
+                </div>
+                <img src="DeybiJUnior.jpg" alt="Tu Foto" class="profile-photo">
+            </section>
+
+            <div class="spacer"></div>
+
+            <div class="cards-wrapper">
+                <!-- Sección de Habilidades -->
+                <section id="habilidades">
+                    <h2>Habilidades</h2>
+                    <p class="regular-text">Soy un poco adicto a los productos digitales y a la innovación. A lo largo de mi desarrollo, he logrado dominar varias herramientas para mejorar mis habilidades.</p>
+                    <div class="card-container">
+                        <div class="card">
+                            <h2>Diseñador</h2>
+                            <img src="img_proyectos/vector.png" alt="Imagen del diseñador" class="card-image">
+                            <h3>Conocimiento:</h3>
+                            <p>UX, UI, Web, Aplicaciones Moviles</p>
+                            <h3>Herramientas:</h3>
+                            <p>° Figma<br>° Photoshop<br>° Adobe Effects<br>° Adobe Premier</p>
+                        </div>
+                        <div class="card">
+                            <h2>Desarrollador</h2>
+                            <img src="img_proyectos/trabajar-desde-casa.png" alt="Imagen del desarrollador" class="card-image">
+                            <h3>Lenguajes:</h3>
+                            <p>Html, Css, Java, Git y Kotlin</p>
+                            <h3>Entorno de Desarrollo:</h3>
+                            <p>° Android Studios<br>° Github<br>° Docker<br>° VS Code</p>
+                        </div>
+                        <div class="card">
+                            <h2>Certificación</h2>
+                            <img src="img_proyectos/curriculum.png" alt="Imagen de certificación" class="card-image">
+                            <p>° Scrum Foundation Professional Certificate<br>° Presentaciones Efectivas<br>° Aprendizaje Basado en Proyectos</p>
+                        </div>
+                    </div>      
+                </section>
+            
+                <div class="spacer"></div>
+            
+                <!-- Sección de Proyectos -->
+<!-- Sección de Proyectos -->
+<section id="Proyectos">
+    <div class="content">
+       
+        <div class="background-image">
+            <h2 class="h2-white">Proyectos</h2>
+            <p class="regular-text-white">Como desarrollador móvil y web, he tenido la oportunidad de trabajar en una variedad de proyectos que reflejan mi pasión por la tecnología y el diseño. Cada proyecto que realizo está enfocado en crear soluciones funcionales y atractivas que satisfacen las necesidades de los usuarios.</p>
+            
+        </div>
+
+
+        <div class="card-container2">
+            <a href="https://github.com/DeybiJunior/AILearning" class="card-ligth" target="_blank">
+                <p>.</p>
+                <img src="img_proyectos/AiLearning.png" alt="Imagen del proyecto AiLearning" class="card-image2">
+                <h3>AILearning</h3>
+                <p>App con IA generativa de clases de Inglés.</p>
+            </a>
+            <a href="https://controlambiental.net" class="card-ligth" target="_blank">
+                <p>.</p>
+                <img src="img_proyectos/control ambiental.png" alt="Imagen del proyecto Control Ambiental" class="card-image2">
+                <h3>Applaga</h3>
+                <p>App móvil para gestión de puntos de control y Dashboard de Control Ambiental.</p>
+            </a>
+            <a href="https://github.com/DeybiJunior/Evaluador" class="card-ligth" target="_blank">
+                <p>.</p>
+                <img src="img_proyectos/calculadora.png" alt="Imagen del proyecto Evaluador" class="card-image2">
+                <h3>Evaluador</h3>
+                <p>Calcula y gestiona calificaciones estudiantiles.</p>
+            </a>
+            <a href="https://github.com/tu_usuario/evaluador" class="card-ligth" target="_blank">
+                <p>.</p>
+                <img src="img_proyectos/busesv.png" alt="Imagen del proyecto APPBusses" class="card-image2">
+                <h3>APPBusses</h3>
+                <p>App para reserva y compra de boletos interprovinciales.</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=6IOM3Hr8E5o" class="card-ligth" target="_blank">
+                <p>.</p>
+                <img src="img_proyectos/lockligth.png" alt="Imagen del proyecto LockLigth" class="card-image2">
+                <h3>LockLigth</h3>
+                <p>App de seguridad de puerta y control de iluminación.</p>
+            </a>
+            <a href="https://github.com/DeybiJunior/house_rent_api" class="card-ligth" target="_blank">
+                <p>.</p>
+                <img src="img_proyectos/api.png" alt="Imagen del proyecto House Rent API" class="card-image2">
+                <h3>House Rent API</h3>
+                <p>API en Java para gestionar propiedades de alquiler.</p>
+            </a>
+        </div>
+    </div>
+
+
+</section>
+
+            
+            
+
+            <div class="spacer"></div>
+
+            <!-- Sección de Contacto -->
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p class="regular-text">¿Quieres saber más o tienes alguna pregunta? No dudes en contactarme a través de mis redes sociales o envíame un mensaje.</p>
+
+                <form id="formularioContacto">
+                    <div class="form-group">
+                        <label class="regular-text" for="nombres">Nombres:</label>
+                        <input type="text" id="nombres" name="nombres" required>
+                    </div>
+
+                    <div class="form-group fila-doble">
+                        <div class="form-group">
+                            <label class="regular-text" for="proyecto">Tipo de servicio</label>
+                            <select id="proyecto" name="proyecto" required>
+                                <option value="Desarrollo Web">Desarrollo Web</option>
+                                <option value="Desarrollo Móvil">Desarrollo Móvil</option>
+                                <option value="Diseño UI/UX">Diseño UI/UX</option>
+                                <option value="Consultoría Técnica">Consultoría Técnica</option>
+                                <option value="Soporte Técnico">Soporte Técnico</option>
+                                <option value="Capacitación y Entrenamiento">Capacitación y Entrenamiento</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="regular-text" for="interes">Motivo de contacto</label>
+                            <select id="interes" name="interes" required>
+                                <option value="Obtener más información">Obtener más información</option>
+                                <option value="Solicitar una reunión">Solicitar una reunión</option>
+                                <option value="Cotización de servicios">Cotización de servicios</option>
+                                <option value="Propuesta de colaboración">Propuesta de colaboración</option>
+                                <option value="Asesoría personalizada">Asesoría personalizada</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="regular-text"for="detalle">Detalle:</label>
+            <textarea id="detalle" name="detalle" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <script src="scriptcontacto.js"></script>
+
+
+
+          </div>
+
+        </main>
+  
+        <!-- Footer siempre al fondo -->
+        <footer class="footer">
+            <div class="container">
+                <img src="icons/Screenshot_6.png">
+                <div class="spacer"></div>
+                <p class="footer-quote">"La tecnología avanza,</p>
+                <p class="footer-quote">y nosotros avanzamos con ella."</p>
+                <div class="spacer"></div>
+                <div class="social-links">
+                    <a href="mailto:contact@ruizmarquina.com" target="_blank" class="social-icon">
+                        <i class="bi bi-envelope-fill"></i><span class="social-name">  Gmail</span>
+                    </a>
+                    <a href="https://x.com/Deybijuniorr" target="_blank" class="social-icon">
+                        <i class="bi bi-twitter"></i><span class="social-name">  Twitter</span>
+                    </a>
+                    <a href="https://github.com/DeybiJunior" target="_blank" class="social-icon">
+                        <i class="bi bi-github"></i><span class="social-name">  GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/d-ju" target="_blank" class="social-icon">
+                        <i class="bi bi-linkedin"></i><span class="social-name">  LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/deybimarquina/" target="_blank" class="social-icon">
+                        <i class="bi bi-instagram"></i><span class="social-name">  Instagram</span>
+                    </a>
+                </div>
+                <div class="spacer"></div>
+                <p>&copy; 2024 Ruiz Marquina Deybi Junior. Todos los derechos reservados. | Diseñado por Deybi Junior Ruiz Marquina</p>
+            
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+

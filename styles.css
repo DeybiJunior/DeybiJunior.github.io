@@ -1,0 +1,614 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}/* Contenedor de fondo */
+
+.background-container {
+  background-image: url('5559852.jpg'); /* Ruta de tu imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  display: flex;
+  flex-direction: column; /* Para que el encabezado y el main se apilen verticalmente */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+  position: fixed; /* Mantener el encabezado fijo en la parte superior */
+  top: 0; /* Alineación superior */
+  left: 0; /* Alineación izquierda */
+  right: 0; /* Alineación derecha */
+  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  background-image: url('Icons/back.png'); /* Ruta de tu imagen de fondo */
+}
+
+
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none; /* Ocultado por defecto en pantallas grandes */
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a, .download-btn {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+nav.show {
+  display: flex; /* Mostrar menú cuando se activa */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Mostrar icono en pantallas pequeñas */
+  }
+
+  nav {
+    display: none; /* Ocultar menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.9); /* Fondo semitransparente para el menú desplegable */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para el menú */
+  }
+
+  nav a, .download-btn, .mode-toggle {
+    padding: 10px 0;
+    text-align: left;
+  }
+
+  nav.show {
+    display: flex; /* Mostrar menú cuando se activa */
+  }
+}
+
+
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  background-size: cover; 
+  background-position: center;
+  height: 100vh; 
+  color: white; 
+  padding: 0 15px; 
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.hello, .name, .job {
+  margin: 10px 0; 
+}
+
+.hello {
+  font-size: 36px; 
+}
+
+.name {
+  font-size: 66px; 
+  font-weight: bold; 
+}
+
+.job {
+  font-size: 37px; 
+}
+
+.text {
+  margin-bottom: 20px;
+  font-size: 15px; 
+  color: #ffffff; 
+  font-style: italic; 
+}
+
+.contact-btn {
+  padding: 15px 30px; /* Tamaño mayor para mejorar la experiencia de clic */
+  background-color: #003474;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em; /* Aumento de tamaño de texto */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Añadido box-shadow a la transición */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contact-btn:hover {
+  background-color: rgb(0, 31, 65);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.profile-photo {
+  border-radius: 15px; 
+  width: 302px; 
+  height: 476px; 
+  object-fit: cover; 
+}
+
+
+
+
+
+
+
+
+
+
+/* Contenedor general para ambas secciones de tarjetas */
+.cards-wrapper {
+  display: flex;
+  flex-direction: column; /* Colocar las secciones una debajo de la otra */
+  align-items: center; /* Centrar horizontalmente */
+  padding: 20px; /* Espacio interno */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px; /* Ancho máximo para centrar tarjetas */
+  width: 100%; /* Asegurarte que ocupa todo el espacio */
+}
+
+.card {
+  flex: 1 1 300px; /* Ajustar el ancho según necesites */
+  margin: 10px; /* Espaciado entre tarjetas */
+}
+
+/* Contenedor de tarjetas de proyectos */
+/* Contenedor de tarjetas de proyectos */
+/* Contenedor de tarjetas de proyectos */
+.card-container2 {
+  display: grid; /* Usar grid para disposición de columnas */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 20px; /* Espacio entre tarjetas */
+  margin-top: 20px; /* Espacio superior para el contenedor de tarjetas */
+  max-width: 1200px; /* Establecer un ancho máximo */
+  justify-items: center; /* Centrar las tarjetas horizontalmente en cada celda */
+  padding-top: 320px; /* Valor base para el padding-top */
+}
+
+
+
+@media (max-width: 768px) {
+  .card-container2 {
+      padding-top: 350px; /* Aumenta el padding-top */
+  }
+}
+
+@media (max-width: 554px) {
+  .card-container2 {
+      padding-top: 450px; /* Aumenta el padding-top */
+  }
+}
+
+
+
+/* El resto de tus estilos existentes */
+
+ 
+/* Estilos para las tarjetas ligeras */
+.card-ligth {
+  background-color: #ffffff; /* Color de fondo */
+  border-radius: 15px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  width: 368px; /* Ancho fijo de la tarjeta */
+  max-height: 403px; /* Altura máxima para limitar el tamaño */
+  overflow: hidden; /* Ocultar contenido que desborde */
+  text-align: center; /* Centrar contenido */
+  color: black; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s ease; 
+  position: relative; /* Permite que el contenido se muestre por encima de la imagen de fondo */
+/* Transición suave para el cambio de color */
+}
+
+.card-ligth:hover {
+  background-color: #d0d0d0; /* Oscurecer un poco la tarjeta al pasar el mouse */
+}
+
+.card-image2 {
+  width: 313px; /* Ajustar al 100% del contenedor */
+  height: 150px; /* Ajustar la altura al 60% del contenedor */
+  object-fit: cover; /* Asegura que la imagen mantenga sus proporciones y rellene el espacio */
+  border-radius: 15px 15px 0 0; /* Esquinas redondeadas solo en la parte superior de la imagen */
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+
+/* Media queries para hacer las tarjetas responsivas */
+@media (max-width: 1200px) {
+  .card-container2 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container2 {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+  }
+}
+
+/* Estilos para el título de la tarjeta */
+.card h2 {
+  font-size: 40px; /* Tamaño de fuente del título */
+  font-weight: 900; /* Black (peso 900) */
+  color: #3D3D3D; /* Color del título */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+h2 {
+  font-size: 64px; /* Tamaño de fuente */
+  color: #3D3D3D; /* Color oscuro */
+  font-weight: 900; /* Black es un peso de 900 */
+  text-align: center; /* Centrar el texto */
+}
+
+.regular-text {
+  font-size: 24px; /* Tamaño de fuente */
+  font-weight: normal; /* Fuente regular */
+  color: #000000; /* Color del texto */
+  max-width: 800px; /* Ancho máximo */
+  margin: 20px auto; /* Margen automático en los lados */
+  margin-bottom: 15px; /* Espaciado inferior */
+  text-align: center; /* Centrar el texto */
+  padding: 0 15px; 
+}
+
+.h2-white {
+  font-size: 64px; /* Tamaño de fuente */
+  color: #ffffff; /* Color oscuro */
+  font-weight: 900;
+  text-align: center; /* Centrar el texto */
+}
+
+.regular-text-white {
+  font-size: 24px; /* Tamaño de fuente */
+  font-weight: normal; /* Fuente regular */
+  color: #ffffff; /* Color del texto */
+  max-width: 800px; /* Ancho máximo */
+  margin: 20px auto; /* Margen automático en los lados */
+  margin-bottom: 15px; /* Espaciado inferior */
+  text-align: center; /* Centrar el texto */
+  padding: 0 15px; 
+}
+
+
+
+
+
+#Proyectos {
+  position: relative; /* Permite la manipulación de la posición de los elementos hijos */
+  width: 110%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.background-image {
+  background-image: url('5559852.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: top center; /* Alinear la imagen hacia la parte superior */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  height: 450px; /* Ajusta la altura según lo necesites */
+  padding-top: 15px; /* Espacio superior de 15px para separar la imagen del contenido */
+  position: absolute; /* Posiciona el contenedor de la imagen de fondo de manera absoluta */
+  top: 0; /* Alinea la imagen en la parte superior del contenedor */
+  left: 0; /* Alinea la imagen en el lado izquierdo del contenedor */
+  z-index: -1; /* Envía el contenedor de la imagen al fondo */
+}
+
+
+
+
+#Proyectos .content {
+  padding: 20px; /* Espacio interno para los textos */
+  color: white; /* Cambia el color del texto si es necesario */
+  position: relative; /* Mantiene el contenido sobre la imagen de fondo */
+  display: flex; /* Utiliza flexbox para centrar el contenido */
+  flex-direction: column; /* Coloca los elementos uno debajo del otro */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  height: 100%; /* Ocupa toda la altura del contenedor */
+}
+
+
+
+.card {
+  background-color: #EDEDED; /* Color de fondo de la tarjeta */
+  border-radius: 15px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  padding: 20px; /* Espaciado interno */
+  margin-top: 20px; /* Espacio entre la sección de fondo y la tarjeta */
+  text-align: center; /* Centrar contenido */
+}
+
+
+/* Estilos para el subtítulo */
+.card h3 {
+  font-size: 24px; /* Tamaño del subtítulo */
+  color: #007CF0; /* Color azul del subtítulo */
+  margin-top: 20px; /* Espaciado superior */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilos para el texto */
+.card p {
+  font-size: 20px; /* Tamaño del texto */
+  color: #000000; /* Color negro */
+  margin-bottom: 15px; /* Espaciado inferior entre párrafos */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.card img.card-image {
+  width: 158px; /* Ancho de la imagen */
+  height: 158px; /* Alto de la imagen */
+  border-radius: 10px; /* Esquinas redondeadas en la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra todo el área */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* Sección de Contacto */
+#contacto {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 20px; /* Espacio superior e inferior aumentado para mejor separación */
+  margin: 20px auto; /* Agregado margen superior e inferior */
+  background-size: cover;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #f4f4f4; /* Fondo ligero para resaltar el formulario */
+  border-radius: 10px; /* Bordes suaves */
+}
+
+/* Descripción más destacada */
+.descripcion {
+  font-size: 1.2em;
+  line-height: 1.8; /* Aumenta la altura de línea para más legibilidad */
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Estilo de los grupos de formulario */
+.form-group {
+  margin-bottom: 20px; /* Espacio entre grupos más amplio */
+}
+
+/* Estilo de fila doble */
+.fila-doble {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.fila-doble .form-group {
+  width: 48%;
+}
+
+/* Estilo de los campos de texto y selectores */
+input[type="text"],
+select,
+textarea {
+  width: 94%;
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1em; /* Asegura que todos tengan el mismo tamaño de fuente */
+  transition: border-color 0.3s ease;
+}
+
+
+
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilo del botón */
+button {
+  padding: 15px 30px; /* Tamaño mayor para mejorar la experiencia de clic */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em; /* Aumento de tamaño de texto */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Añadido box-shadow a la transición */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
+}
+
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .fila-doble {
+    flex-direction: column;
+  }
+  
+  .fila-doble .form-group {
+    width: 100%;
+  }
+  
+}
+
+
+
+
+
+
+
+/* Media Queries para ajustar el número de imágenes visibles */
+@media (max-width: 1200px) {
+  .slide {
+      min-width: calc(20%); /* Muestra 5 imágenes a la vez en pantallas grandes */
+  }
+}
+
+@media (max-width: 992px) {
+  .slide {
+      min-width: calc(25%); /* Muestra 4 imágenes a la vez en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+      min-width: calc(33.33%); /* Muestra 3 imágenes a la vez en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+      min-width: calc(50%); /* Muestra 2 imágenes a la vez en pantallas muy pequeñas */
+  }
+}
+
+@media (max-width: 320px) {
+  .slide {
+      min-width: 100%; /* Muestra 1 imagen a la vez en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+/* Estilo para el footer */
+.footer {
+  background-image: url('5559852.jpg'); /* Ruta de la imagen de fondo */
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+/* Estilo para la frase en cursiva */
+.footer-quote {
+  font-style: italic;
+  font-size: 24px; /* Aumenta el tamaño de la frase */
+  font-weight: lighter;
+  margin-bottom: -3; /* Elimina el espacio inferior */
+  line-height: 1.2; /* Reduce el espacio entre las líneas */
+}
+
+.spacer {
+  height: 40px; /* Ajusta la altura según sea necesario */
+}
+
+/* Estilo para los iconos sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  color: white; /* Forzar color blanco para texto e íconos */
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: opacity 0.3s;
+}
+
+.social-icon i, /* Fuerza color blanco para el ícono */
+.social-icon span { /* Fuerza color blanco para el texto */
+  color: white;
+}
+
+/* Esconde el texto del nombre por defecto */
+.social-name {
+  display: none;
+}
+
+/* Efecto hover: parpadeo y muestra el nombre */
+.social-icon:hover .social-name {
+  display: inline-block;
+  animation: blink 0.5s ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Ajusta la posición del copyright al final */
+.footer-copy {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+
+
+
+
