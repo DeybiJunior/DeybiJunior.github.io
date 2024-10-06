@@ -188,6 +188,7 @@ nav.show {
   margin: 10px; /* Espaciado entre tarjetas */
 }
 
+
 /* Contenedor de tarjetas de proyectos */
 .card-container2 {
   display: grid; /* Usar grid para disposición de columnas */
@@ -213,11 +214,7 @@ nav.show {
   }
 }
 
-@media (max-width: 454px) {
-  .card-container2 {
-      padding-top: 650px; /* Aumenta el padding-top */
-  }
-}
+
 
 /* El resto de tus estilos existentes */
 
