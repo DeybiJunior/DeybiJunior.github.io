@@ -31,8 +31,11 @@ header {
   z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
   transition: background-color 0.3s; /* Transición suave para el color de fondo */
   background-image: url('Icons/back.png'); /* Ruta de tu imagen de fondo */
+  background-image: url('Icons/back.png'); /* Ruta de tu imagen de fondo */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen para que cubra todo el área */
+  background-position: center; /* Centra la imagen */
 }
-
 
 
 .logo {
@@ -188,7 +191,6 @@ nav.show {
   margin: 10px; /* Espaciado entre tarjetas */
 }
 
-
 /* Contenedor de tarjetas de proyectos */
 .card-container2 {
   display: grid; /* Usar grid para disposición de columnas */
@@ -204,13 +206,19 @@ nav.show {
 
 @media (max-width: 768px) {
   .card-container2 {
-      padding-top: 350px; /* Aumenta el padding-top */
+      padding-top: 350px;
   }
 }
 
 @media (max-width: 554px) {
   .card-container2 {
-      padding-top: 450px; /* Aumenta el padding-top */
+      padding-top: 450px; 
+  }
+}
+
+@media (max-width: 454px) {
+  .card-container2 {
+      padding-top: 550px; 
   }
 }
 
@@ -399,7 +407,6 @@ body {
   padding: 40px 20px; /* Espacio superior e inferior aumentado para mejor separación */
   margin: 20px auto; /* Agregado margen superior e inferior */
   background-size: cover;
-  min-height: 100vh;
   box-sizing: border-box;
   background-color: #f4f4f4; /* Fondo ligero para resaltar el formulario */
   border-radius: 10px; /* Bordes suaves */
