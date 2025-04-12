@@ -1,234 +1,413 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruiz Marquina Deybi Junior</title>
     <link rel="icon" type="image/x-icon" href="/Icons/icono.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deybi Junior Ruiz Marquina | Proyecto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <div class="background-container">
-        <!-- Encabezado -->
-        <header id="header">
-            <div class="logo">Deybi Junior</div>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Icono de menú hamburguesa -->
-            <nav id="nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#Proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-                <a href="Archivos/Cv _ CURRICULO VITAE- RUIZ MARQUINA DEYBI JUNIOR.pdf" download>Descargar CV</a>
-            </nav>
-        </header>
-        
-        <script src="scriptheader.js"></script>
-        
-        <!-- Contenido principal -->
-        <main class="main-content">
-            <!-- Sección de Inicio -->
-            <section id="inicio" class="hero">
-                <div class="hero-content">
-                    <h3 id="hello" class="hello">Hola, soy</h3>
-                    <h3 class="name">Deybi Junior</h3>
-                    <h3 class="job">Ingeniero de Sistemas</h3>
-                    <p class="text">Desarrollador apasionado por la tecnología y la innovación.</p>
-                    <button class="contact-btn" onclick="scrollToContact()">Contáctame</button>
-                    <script>
-                        function scrollToContact() {
-                            document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
-                        }
-                        </script>
-
-                </div>
-                <img src="DeybiJUnior.jpg" alt="Tu Foto" class="profile-photo">
-            </section>
-
-            <div class="spacer"></div>
-
-            <div class="cards-wrapper">
-                <!-- Sección de Habilidades -->
-                <section id="habilidades">
-                    <h2>Habilidades</h2>
-                    <p class="regular-text">Soy un poco adicto a los productos digitales y a la innovación. A lo largo de mi desarrollo, he logrado dominar varias herramientas para mejorar mis habilidades.</p>
-                    <div class="card-container">
-                        <div class="card">
-                            <h2>Diseñador</h2>
-                            <img src="img_proyectos/vector.png" alt="Imagen del diseñador" class="card-image">
-                            <h3>Conocimiento:</h3>
-                            <p>UX, UI, Web, Aplicaciones Moviles</p>
-                            <h3>Herramientas:</h3>
-                            <p>° Figma<br>° Photoshop<br>° Adobe Effects<br>° Adobe Premier</p>
-                        </div>
-                        <div class="card">
-                            <h2>Desarrollador</h2>
-                            <img src="img_proyectos/trabajar-desde-casa.png" alt="Imagen del desarrollador" class="card-image">
-                            <h3>Lenguajes:</h3>
-                            <p>Html, Css, Java, Git y Kotlin</p>
-                            <h3>Entorno de Desarrollo:</h3>
-                            <p>° Android Studios<br>° Github<br>° Docker<br>° VS Code</p>
-                        </div>
-                        <div class="card">
-                            <h2>Certificación</h2>
-                            <img src="img_proyectos/curriculum.png" alt="Imagen de certificación" class="card-image">
-                            <p>° Scrum Foundation Professional Certificate<br>° Presentaciones Efectivas<br>° Aprendizaje Basado en Proyectos</p>
-                        </div>
-                    </div>      
-                </section>
-            
-                <div class="spacer"></div>
-            
-                <!-- Sección de Proyectos -->
-<!-- Sección de Proyectos -->
-<section id="Proyectos">
-    <div class="content">
-       
-        <div class="background-image">
-            <h2 class="h2-white">Proyectos</h2>
-            <p class="regular-text-white">Como desarrollador móvil y web, he tenido la oportunidad de trabajar en una variedad de proyectos que reflejan mi pasión por la tecnología y el diseño. Cada proyecto que realizo está enfocado en crear soluciones funcionales y atractivas que satisfacen las necesidades de los usuarios.</p>
-            
-        </div>
-
-
-        <div class="card-container2">
-            <a href="https://github.com/DeybiJunior/AILearning" class="card-ligth" target="_blank">
-                <p>.</p>
-                <img src="img_proyectos/AiLearning.png" alt="Imagen del proyecto AiLearning" class="card-image2">
-                <h3>AILearning</h3>
-                <p>App con IA generativa de clases de Inglés.</p>
-            </a>
-            <a href="https://controlambiental.net" class="card-ligth" target="_blank">
-                <p>.</p>
-                <img src="img_proyectos/control ambiental.png" alt="Imagen del proyecto Control Ambiental" class="card-image2">
-                <h3>Applaga</h3>
-                <p>App móvil para gestión de puntos de control y Dashboard de Control Ambiental.</p>
-            </a>
-            <a href="https://github.com/DeybiJunior/Evaluador" class="card-ligth" target="_blank">
-                <p>.</p>
-                <img src="img_proyectos/calculadora.png" alt="Imagen del proyecto Evaluador" class="card-image2">
-                <h3>Evaluador</h3>
-                <p>Calcula y gestiona calificaciones estudiantiles.</p>
-            </a>
-            <a href="https://github.com/DeybiJunior/BusesV" class="card-ligth" target="_blank">
-                <p>.</p>
-                <img src="img_proyectos/busesv.png" alt="Imagen del proyecto APPBusses" class="card-image2">
-                <h3>APPBusses</h3>
-                <p>App para reserva y compra de boletos interprovinciales.</p>
-            </a>
-            <a href="https://www.youtube.com/watch?v=6IOM3Hr8E5o" class="card-ligth" target="_blank">
-                <p>.</p>
-                <img src="img_proyectos/lockligth.png" alt="Imagen del proyecto LockLigth" class="card-image2">
-                <h3>LockLigth</h3>
-                <p>App de seguridad de puerta y control de iluminación.</p>
-            </a>
-            <a href="https://github.com/DeybiJunior/house_rent_api" class="card-ligth" target="_blank">
-                <p>.</p>
-                <img src="img_proyectos/api.png" alt="Imagen del proyecto House Rent API" class="card-image2">
-                <h3>House Rent API</h3>
-                <p>API en Java para gestionar propiedades de alquiler.</p>
-            </a>
-        </div>
-    </div>
-
-
-</section>
-
-            
-            
-
-            <div class="spacer"></div>
-
-            <!-- Sección de Contacto -->
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <p class="regular-text">¿Quieres saber más o tienes alguna pregunta? No dudes en contactarme a través de mis redes sociales o envíame un mensaje.</p>
-
-                <form id="formularioContacto">
-                    <div class="form-group">
-                        <label class="regular-text" for="nombres">Nombres:</label>
-                        <input type="text" id="nombres" name="nombres" required>
-                    </div>
-
-                    <div class="form-group fila-doble">
-                        <div class="form-group">
-                            <label class="regular-text" for="proyecto">Tipo de servicio</label>
-                            <select id="proyecto" name="proyecto" required>
-                                <option value="Desarrollo Web">Desarrollo Web</option>
-                                <option value="Desarrollo Móvil">Desarrollo Móvil</option>
-                                <option value="Diseño UI/UX">Diseño UI/UX</option>
-                                <option value="Consultoría Técnica">Consultoría Técnica</option>
-                                <option value="Soporte Técnico">Soporte Técnico</option>
-                                <option value="Capacitación y Entrenamiento">Capacitación y Entrenamiento</option>
-                                <option value="Otros">Otros</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="regular-text" for="interes">Motivo de contacto</label>
-                            <select id="interes" name="interes" required>
-                                <option value="Obtener más información">Obtener más información</option>
-                                <option value="Solicitar una reunión">Solicitar una reunión</option>
-                                <option value="Cotización de servicios">Cotización de servicios</option>
-                                <option value="Propuesta de colaboración">Propuesta de colaboración</option>
-                                <option value="Asesoría personalizada">Asesoría personalizada</option>
-                                <option value="Otros">Otros</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="regular-text"for="detalle">Detalle:</label>
-            <textarea id="detalle" name="detalle" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-
-            <script src="scriptcontacto.js"></script>
-
-
-
-          </div>
-
-        </main>
-  
-        <!-- Footer siempre al fondo -->
-        <footer class="footer">
-            <div class="container">
-                <img src="icons/Logo.png">
-                <div class="spacer"></div>
-                <p class="footer-quote">"La tecnología avanza,</p>
-                <p class="footer-quote">y nosotros avanzamos con ella."</p>
-                <div class="spacer"></div>
-                <div class="social-links">
-                    <a href="mailto:contact@ruizmarquina.com" target="_blank" class="social-icon">
-                        <i class="bi bi-envelope-fill"></i><span class="social-name">  Gmail</span>
-                    </a>
-                    <a href="https://x.com/Deybijuniorr" target="_blank" class="social-icon">
-                        <i class="bi bi-twitter"></i><span class="social-name">  Twitter</span>
-                    </a>
-                    <a href="https://github.com/DeybiJunior" target="_blank" class="social-icon">
-                        <i class="bi bi-github"></i><span class="social-name">  GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/d-ju" target="_blank" class="social-icon">
-                        <i class="bi bi-linkedin"></i><span class="social-name">  LinkedIn</span>
-                    </a>
-                    <a href="https://www.instagram.com/deybimarquina/" target="_blank" class="social-icon">
-                        <i class="bi bi-instagram"></i><span class="social-name">  Instagram</span>
-                    </a>
-                </div>
-                <div class="spacer"></div>
-                <p>&copy; 2024 Ruiz Marquina Deybi Junior. Todos los derechos reservados. | Diseñado por Deybi Junior Ruiz Marquina</p>
-            
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">DeybiJunior</div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
-        </footer>
-    </div>
+            <nav class="nav-links">
+                <a href="#about">Sobre mí</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#portfolio">Proyectos</a>
+                <a href="#certifications">Certificaciones</a>
+                <a href="Archivos/Cv _ RUIZ MARQUINA DEYBI JUNIOR.pdf" download>Descargar CV</a>
 
-</body>
-</html>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <img src="/DeybiJUnior.jpg" alt="Deybi Junior Ruiz Marquina" class="profile-image">
+            <h1>Deybi Junior Ruiz Marquina</h1>
+            <p>Desarrollador Android y Web especializado en soluciones digitales</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:deybijuniorr@gmail.com">deybijuniorr@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+51921352415">+51 921 352 415</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Huamachuco - Perú</span>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://deybijunior.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+                <a href="https://github.com/DeybiJunior" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/DeybiJunior" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <a href="https://wa.me/51921352415" class="cta-button" target="_blank">Contáctame</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <p>Desarrollador Android y Web con experiencia en la creación de soluciones digitales desde cero, incluyendo publicación en Google Play, integración de IA y APIs externas. Especializado en Kotlin, Firebase, y tecnologías web con enfoque en UX y eficiencia. Capacidad comprobada para liderar proyectos funcionales, automatizar procesos y mejorar la experiencia de usuario con diseño moderno y funcional.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Lenguajes y Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>Kotlin</li>
+                        <li>JavaScript</li>
+                        <li>PHP (básico)</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Angular (básico)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+                    <ul class="skill-list">
+                        <li>Firebase</li>
+                        <li>MySQL</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fab fa-android"></i> Desarrollo Android</h3>
+                    <ul class="skill-list">
+                        <li>Jetpack Compose</li>
+                        <li>Material Design 3</li>
+                        <li>XML</li>
+                        <li>OkHttp</li>
+                        <li>Google Maps API</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Herramientas</h3>
+                    <ul class="skill-list">
+                        <li>Android Studio</li>
+                        <li>GitHub</li>
+                        <li>Figma</li>
+                        <li>Trello</li>
+                        <li>Jira</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-sitemap"></i> Metodologías</h3>
+                    <ul class="skill-list">
+                        <li>Scrum</li>
+                        <li>ITIL</li>
+                        <li>Design Thinking</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> UI/UX</h3>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>Miro</li>
+                        <li>Scope canvas</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Diagramas de flujo</li>
+                        <li>Diseño responsivo</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-file-alt"></i> Ofimática</h3>
+                    <ul class="skill-list">
+                        <li>Microsoft Office (avanzado)</li>
+                        <li>Google Workspace</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Proyecto Independiente (Evaluador)</h3>
+                        <div class="role">Desarrollador de Aplicación Móvil</div>
+                        <div class="date">Enero 2025 - Febrero 2025</div>
+                        <ul>
+                            <li>Desarrollé una aplicación móvil para el cálculo y gestión de notas universitarias, facilitando la planificación académica.</li>
+                            <li>Lancé la aplicación en Google Play en febrero de 2025.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech">Kotlin</span>
+                            <span class="tech">Material Design 3</span>
+                            <span class="tech">Google Play Console</span>
+                            <span class="tech">XML</span>
+                            <span class="tech">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Servicio Privado de Aprendizaje Empresarial</h3>
+                        <div class="role">Especialista en Soporte (Practicas PreProfecionales)</div>
+                        <div class="date">Septiembre 2024 - Noviembre 2024</div>
+                        <ul>
+                            <li>Desarrollé un módulo de asistencia que genera informes en Excel, agilizando procesos en un 30%.</li>
+                            <li>Integrar APIs de Google Maps para la página web teniendo una mejora en la localización de la sede.</li>
+                            <li>Realice mantenimiento e instalación de software requerido por la empresa.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">MySQL</span>
+                            <span class="tech">Angular</span>
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">Google Maps Api</span>
+                        </div>
+                        <div class="reference">
+                            Referencia: Ing. Carlos Arcila Ridia | contacto carcila@sepae.edu.pe | 948003003
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>I.E Andrés A. Cáceres - Cochabamba</h3>
+                        <div class="role">Desarrollador Full-Stack (App Educativa con IA)</div>
+                        <div class="date">Junio 2024 - Noviembre 2024</div>
+                        <ul>
+                            <li>Desarrollé una aplicación web/móvil integrando un modelo de Inteligencia Artificial para generar planes de estudio personalizados, mejorando un 25% la retención estudiantil (según encuestas internas).</li>
+                            <li>Implementé un servidor local con Mistral 7B (mediante Ollama), capaz de procesar más de 500 consultas diarias, antes de migrar a la API de Gemini para mejorar escalabilidad y rendimiento.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech">Kotlin</span>
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Firebase</span>
+                            <span class="tech">Ollama</span>
+                            <span class="tech">XML</span>
+                            <span class="tech">GitHub</span>
+                            <span class="tech">Gemini Api</span>
 
+                        </div>
+                        <div class="reference">
+                            Referencia: Prof. Jenny Benites | contacto benitesjhenny@gmail.com | 918179792
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Control Ambiental (Sede Trujillo)</h3>
+                        <div class="role">Especialista en Soporte de Aplicaciones Móviles</div>
+                        <div class="date">Marzo 2024 - Julio 2024</div>
+                        <ul>
+                            <li>Lideré el desarrollo de app Android para monitoreo ambiental con escaneo de códigos QR y APIs REST.</li>
+                            <li>Implementé dashboards interactivos para análisis técnico.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech">Kotlin</span>
+                            <span class="tech">Retrofit</span>
+                            <span class="tech">Jetpack Compose</span>
+                            <span class="tech">Material Design 3</span>
+                            <span class="tech">XML</span>
+                            <span class="tech">GitHub</span>
+                        </div>
+                        <div class="reference">
+                            Referencia: Medina Will | contacto contacto@willmedina.me | 954170393
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Proyecto Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+
+            <div class="portfolio-grid">
+                                
+                <div class="portfolio-item">
+                    <img src="/img_proyectos/AiLearning.png" class="portfolio-image" alt="Aplicación Educativa con IA">
+                    <div class="portfolio-overlay">
+                        <h3>App Educativa con IA</h3>
+                        <p>Solución web/móvil que utiliza IA para generar planes de estudio personalizados</p>
+                        <div class="tech-stack">
+                            <span class="tech">Kotlin</span>
+                            <span class="tech">Api Gemini</span>
+                            <span class="tech">Firebase</span>
+                            <span class="tech">Html</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span>
+
+                        </div>
+                        <a href="https://github.com/DeybiJunior/AILearning" class="portfolio-button">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="/img_proyectos/calculadora.png" class="portfolio-image" alt="Aplicación de Notas Universitarias">
+                    <div class="portfolio-overlay">
+                        <h3>Aplicación de Notas Universitarias</h3>
+                        <p>App móvil para Android que facilita la gestión y cálculo de notas académicas</p>
+                        <div class="tech-stack">
+                            <span class="tech">Kotlin</span>
+                            <span class="tech">Material Design 3</span>
+                            <span class="tech">Firebase</span>
+                        </div>
+                        <a href="https://github.com/DeybiJunior/Evaluador" class="portfolio-button">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                
+                <div class="portfolio-item">
+                    <img src="/img_proyectos/control ambiental.png" class="portfolio-image" alt="Sistema de Monitoreo Ambiental">
+                    <div class="portfolio-overlay">
+                        <h3>Sistema de Monitoreo Ambiental</h3>
+                        <p>App Android para monitoreo ambiental con escaneo QR y dashboards interactivos</p>
+                        <div class="tech-stack">
+                            <span class="tech">Kotlin</span>
+                            <span class="tech">Jetpack Compose</span>
+                            <span class="tech">Retrofit</span>
+                            <span class="tech">Endpoints</span>
+                        </div>
+                        <a href="https://controlambiental.net" class="portfolio-button">Ver Proyecto</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="/img_proyectos/lockligth.png" class="portfolio-image" alt="Módulo de Asistencia">
+                    <div class="portfolio-overlay">
+                        <h3>LockLigth</h3>
+                        <p>App de seguridad de puerta y control de iluminación.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Kotlin</span>
+                            <span class="tech">Arduino</span>
+                            <span class="tech">SQLLite</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=6IOM3Hr8E5o" class="portfolio-button">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certificaciones Destacadas</h2>
+            <div class="certifications-container">
+                <div class="certification-item">
+                    <h3>Scrum Foundation Professional Certificate</h3>
+                    <div class="issuer">CertiProf</div>
+                    <div class="date">2024</div>
+                    <span class="badge agile">Agile</span>
+                </div>
+
+                <div class="certification-item">
+                    <h3>Google Play Store Listing Certificate</h3>
+                    <div class="issuer">Google</div>
+                    <div class="date">2025</div>
+                    <span class="badge mobile">Mobile</span>
+                </div>
+                
+                <div class="certification-item">
+                    <h3>Transforma Ideas En Soluciones</h3>
+                    <div class="issuer">PeruEduca</div>
+                    <div class="date">2024</div>
+                    <span class="badge innovacion">Innovación</span>
+                </div>
+                
+                <div class="certification-item">
+                    <h3>Design Thinking</h3>
+                    <div class="issuer">PeruEduca</div>
+                    <div class="date">2024</div>
+                    <span class="badge metodologias">Metodologías</span>
+                </div>
+                
+                <div class="certification-item">
+                    <h3>Emprendimiento Usando Herramientas Digitales</h3>
+                    <div class="issuer">PeruEduca</div>
+                    <div class="date">2024</div>
+                    <span class="badge digital">Digital</span>
+                </div>
+                
+                <div class="certification-item">
+                    <h3>Aprendizaje Basado En Proyecto</h3>
+                    <div class="issuer">PeruEduca</div>
+                    <div class="date">2024</div>
+                    <span class="badge educacion">Educación</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="icons/icono.ico">
+            <div class="spacer"></div>
+            <p class="footer-quote">"La tecnología avanza,</p>
+            <p class="footer-quote">y nosotros avanzamos con ella."</p>
+            <div class="spacer"></div>
+            <div class="social-links">
+                <a href="mailto:contact@ruizmarquina.com" target="_blank" class="social-icon">
+                    <i class="bi bi-envelope-fill"></i><span class="social-name">  Gmail</span>
+                </a>
+                <a href="https://x.com/Deybijuniorr" target="_blank" class="social-icon">
+                    <i class="bi bi-twitter"></i><span class="social-name">  Twitter</span>
+                </a>
+                <a href="https://github.com/DeybiJunior" target="_blank" class="social-icon">
+                    <i class="bi bi-github"></i><span class="social-name">  GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/d-ju" target="_blank" class="social-icon">
+                    <i class="bi bi-linkedin"></i><span class="social-name">  LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/deybimarquina/" target="_blank" class="social-icon">
+                    <i class="bi bi-instagram"></i><span class="social-name">  Instagram</span>
+                </a>
+            </div>
+            <div class="spacer"></div>
+            <p>&copy; 2024 Ruiz Marquina Deybi Junior. Todos los derechos reservados. | Diseñado por Deybi Junior Ruiz Marquina</p>
+        
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="scripttitulo.js"></script>
