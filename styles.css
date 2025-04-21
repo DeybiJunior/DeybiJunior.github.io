@@ -940,4 +940,8 @@ margin-top: 20px;
     border-radius: 20px;
     font-size: 0.8rem;
   }
-
+  .footer .copyright {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 20px;
+}
