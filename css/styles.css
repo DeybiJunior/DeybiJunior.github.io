@@ -219,7 +219,7 @@ section:nth-child(even) {
 
 /* About Section */
 .about-content {
-  max-width: 800px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -229,6 +229,7 @@ section:nth-child(even) {
   background-color: var(--medium-gray);
   margin: 20px 0;
 }
+
 
 /* 3ls Section */
 .skills-container {
@@ -281,7 +282,7 @@ section:nth-child(even) {
 /* Experience Section */
 .timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -387,6 +388,38 @@ section:nth-child(even) {
   font-size: 14px;
   color: var(--dark-gray);
 }
+
+
+.role {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.dateline {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #e3f2fd;
+  color: #3498db;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.achievements {
+  margin-top: 15px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #2ecc71;
+  padding: 12px;
+  border-radius: 0 4px 4px 0;
+}
+
+.achievements h4 {
+  color: #2ecc71;
+  margin-bottom: 8px;
+}
+
 
 /* Certifications Section */
 .certifications-container {
