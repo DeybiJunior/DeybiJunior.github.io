@@ -73,7 +73,7 @@ header {
 .logo {
   font-size: 24px;
   font-weight: 500;
-  color: var(--md-primary);
+  color: var(--white);
   letter-spacing: 0.15px;
 }
 
