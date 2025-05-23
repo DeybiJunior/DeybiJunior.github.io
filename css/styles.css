@@ -270,6 +270,7 @@ header {
   background-color: var(--md-secondary);
   transform: translateY(-1px);
   box-shadow: var(--md-elevation-3);
+  color: var(--white);
 }
 
 .cta-button:hover::before {
@@ -395,6 +396,8 @@ section:nth-child(even) {
   background-color: var(--md-secondary);
   transform: translateY(-1px);
   box-shadow: var(--md-elevation-2);
+  color: var(--white);
+
 }
 
 .portfolio-image {
