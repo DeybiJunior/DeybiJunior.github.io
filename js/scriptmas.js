@@ -1,10 +1,11 @@
 const toggleButton = document.getElementById("toggle-projects");
+const icon = toggleButton.querySelector("i");
 const extraProjects = document.querySelectorAll(".extra-project");
 let visible = false;
 
 toggleButton.addEventListener("click", () => {
     visible = !visible;
-    
+
     if (visible) {
         extraProjects.forEach((project, index) => {
             setTimeout(() => {
@@ -12,7 +13,8 @@ toggleButton.addEventListener("click", () => {
                 project.classList.add("show");
             }, index * 100);
         });
-        toggleButton.textContent = "Ver menos proyectos";
+        toggleButton.firstChild.textContent = "Ver menos proyectos ";
+        icon.className = "fas fa-chevron-up";
     } else {
         extraProjects.forEach((project, index) => {
             setTimeout(() => {
@@ -20,6 +22,7 @@ toggleButton.addEventListener("click", () => {
                 project.classList.remove("show");
             }, index * 50);
         });
-        toggleButton.textContent = "Ver más proyectos";
+        toggleButton.firstChild.textContent = "Ver más proyectos ";
+        icon.className = "fas fa-chevron-down";
     }
 });
