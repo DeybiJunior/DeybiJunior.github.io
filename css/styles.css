@@ -52,7 +52,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   overflow-x: hidden;
-  width: 100%;
+  padding-top: 80px; /* Espacio para el header fijo */
 }
 
 a {
@@ -64,6 +64,14 @@ a {
 a:hover {
   color: var(--md-secondary);
 }
+
+.containergeneral {
+  max-width:  0 auto;
+  margin: 0 auto;
+  padding: 0 0;
+  width: 100%;
+}
+
 
 .container {
   max-width: 1200px;
@@ -77,9 +85,9 @@ header {
   background-color: var(--md-surface);
   box-shadow: var(--md-elevation-2);
   padding: 16px 0;
-  position: sticky;
+            position: fixed; /* Cambiado de sticky a fixed */
   top: 0;
-  z-index: 100;
+            z-index: 1000; /* Aumentado el z-index */
   backdrop-filter: blur(8px);
   width: 100%;
 }
@@ -88,12 +96,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 64px;
+            min-height: 48px; /* Reducido para móvil */
   width: 100%;
+              position: relative;
+
 }
 
 .logo img {
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
@@ -101,17 +111,21 @@ header {
   display: flex;
   gap: 32px;
   align-items: center;
+              transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+
 }
 
 .nav-links a {
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.25px;
-  padding: 12px 16px;
-  border-radius: 20px;
-  transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            padding: 12px 16px;
+            border-radius: 20px;
+            transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            color: var(--md-on-surface);
+            text-decoration: none;
 }
 
 .nav-links a:hover {
@@ -125,18 +139,21 @@ header {
 }
 
 .menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--md-on-surface);
-  padding: 12px;
-  border-radius: 50%;
-  transition: background-color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
-}
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--md-on-surface);
+            padding: 12px;
+            border-radius: 50%;
+            transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+            background: none;
+            border: none;
+            z-index: 1001;
+        }
 
-.menu-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.04);
-}
+        .menu-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.04);
+        }
 
 /* Hero Section */
 .hero {
@@ -1031,7 +1048,7 @@ section:nth-child(even) {
   .menu-toggle {
     display: block;
     position: absolute;
-    top: 20px;
+    top: auto;
     right: 20px;
   }
   
